@@ -1,8 +1,8 @@
-import ClientComponent from "./_components/ClientComponent";
-import { ServerComponent } from "./_components/ServerComponent";
+import ClientComponent from "../_components/ClientComponent";
+import ServerComponent from "../_components/ServerComponent";
 import { Suspense } from "react";
 
-export default async function Home() {
+export default async function Homes() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="flex gap-4 w-full">

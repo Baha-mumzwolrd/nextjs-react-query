@@ -1,7 +1,7 @@
 import { serverFetch } from "@/remote/serverFetcher";
 import { SortEnum, useGetCategoriesQuery } from "@/remote/gql-generated";
 
-export async function ServerComponent({ title }: any) {
+export default async function ServerComponent({ title }: any) {
   const { products } = await serverFetch(useGetCategoriesQuery, {
     variables: {
       currentPage: 1,
@@ -17,7 +17,7 @@ export async function ServerComponent({ title }: any) {
       },
     },
     // next: { revalidate: 6000 },
-    cache: "no-store",
+    // cache: "no-store",
   });
 
   return (

@@ -18,7 +18,6 @@ export const ADD_TO_CART = gql`
         ...MiniCartFragment
         __typename
       }
-      __typename
     }
   }
 

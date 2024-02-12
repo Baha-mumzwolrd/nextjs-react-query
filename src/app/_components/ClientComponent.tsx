@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import {
   SortEnum,
   useGetCategoriesQuery,
@@ -49,7 +50,7 @@ export default function ClientComponent() {
         <div key={item?.id}>{item?.name}</div>
       ))}
 
-      <button
+      <Button
         onClick={() => {
           mutate({
             cartId: "Aztj3thwIqgYGZfLVDDhmvDSeRkAhyb3",
@@ -59,7 +60,7 @@ export default function ClientComponent() {
         }}
       >
         {isPending ? "loading" : "Add product"}
-      </button>
+      </Button>
     </div>
   );
 }

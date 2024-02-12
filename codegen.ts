@@ -4,6 +4,7 @@ require("dotenv").config();
 const config: CodegenConfig = {
   // Where your GQL schema is located (could also be externally hosted)
   schema: `${process.env.NEXT_PUBLIC_MAGENTO_BACKEND_URL}graphql`,
+  watch: true,
   overwrite: true,
   documents: "./src/**/*.gql.ts",
   emitLegacyCommonJSImports: false,
